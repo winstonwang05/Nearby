@@ -57,7 +57,7 @@
 
    ```
    docker run -d --name redis -p 6379:6379 redis:latest
-   docker run -d --name mq -e RABBITMQ_DEFAULT_USER=winston -e RABBITMQ_DEFAULT_PASS=123456 -p 5672:5672 -p 15672:15672 rabbitmq:3.8-management
+   docker run -d --name mq -e RABBITMQ_DEFAULT_USER=YOUR_NAME -e RABBITMQ_DEFAULT_PASS=YOUR_PASSWORD -p 5672:5672 -p 15672:15672 rabbitmq:3.8-management
    ```
 
 3. 修改 `application.yml` 配置 Redis 与 RabbitMQ 地址。

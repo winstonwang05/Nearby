@@ -5,195 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff55b60-2bef-49fb-866e-294a610fcef2" name="Changes" comment="hmdp实现">
-      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/193b3db4-a8fc-449e-996a-ba0260c71cb4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e/storage_v2/_src_/schema/hmdp.UewwAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/HmDianPingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/WebExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/BlogCommentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/FollowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/ShopTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/VoucherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/controller/VoucherOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/dto/LoginFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/dto/ScrollResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/BlogComments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/Follow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/SeckillVoucher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/ShopType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/Voucher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/entity/VoucherOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/BlogCommentsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/BlogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/FollowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/SeckillVoucherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/ShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/ShopTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/VoucherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mapper/VoucherOrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IBlogCommentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IFollowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/ISeckillVoucherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IShopTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IUserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IVoucherOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IVoucherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/BlogCommentsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/FollowServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/SeckillVoucherServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/ShopTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/CacheClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/ILock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/PasswordEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RedisConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RedisData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RedisIdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RefreshLoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RegexPatterns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/RegexUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/SimpleRedisLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/SystemConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/utils/UserHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/blog_like.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/hmdp.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoucherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/seckill.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/unlock.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/blog_like.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/HmDianPingApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/config/MybatisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/config/RedissonConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/config/WebExceptionAdvice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/BlogCommentsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/BlogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/FollowController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/ShopController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/ShopTypeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/UploadController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/VoucherController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/controller/VoucherOrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/dto/LoginFormDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/dto/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/dto/ScrollResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/dto/UserDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/Blog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/BlogComments.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/Follow.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/SeckillVoucher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/Shop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/ShopType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/Voucher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/entity/VoucherOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/BlogCommentsMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/BlogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/FollowMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/SeckillVoucherMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/ShopMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/ShopTypeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/UserInfoMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/VoucherMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/mapper/VoucherOrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IBlogCommentsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IBlogService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IFollowService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/ISeckillVoucherService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IShopService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IShopTypeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IUserInfoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IVoucherOrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/IVoucherService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/BlogCommentsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/FollowServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/SeckillVoucherServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/ShopServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/ShopTypeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/UserInfoServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl$VoucherOrderHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/CacheClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/ILock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/LoginInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/PasswordEncoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RedisConstants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RedisData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RedisIdWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RefreshLoginInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RegexPatterns.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/RegexUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/SimpleRedisLock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/SystemConstants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hmdp/utils/UserHolder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/hmdp.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/VoucherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/seckill.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/unlock.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2025-09-21T18-06-52_449-jvmRun1.dump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2025-09-21T18-06-52_449-jvmRun1.dumpstream" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/RedisTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mq/SeckillConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/193b3db4-a8fc-449e-996a-ba0260c71cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/193b3db4-a8fc-449e-996a-ba0260c71cb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/seckill.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/seckill.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl$VoucherOrderHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl$VoucherOrderHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;winstonwang05&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/winstonwang05/hmdp.git&quot;,
+    &quot;accountId&quot;: &quot;5630b9d4-e774-4b02-b097-e9fa639f1afd&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -210,19 +60,24 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="32gmPOncTAFpoYvkYblFRdn9qlL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JUnit.RedisTest.testLoadShopData.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.HmDianPingApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -232,7 +87,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -368,8 +223,21 @@
       <workItem from="1758596579693" duration="128000" />
       <workItem from="1758596719478" duration="1430000" />
       <workItem from="1758623488653" duration="1864000" />
-      <workItem from="1758626074082" duration="330000" />
+      <workItem from="1758626074082" duration="13247000" />
+      <workItem from="1758673811478" duration="6000" />
+      <workItem from="1758677645960" duration="617000" />
+      <workItem from="1758678350209" duration="2200000" />
+      <workItem from="1758682724966" duration="2721000" />
     </task>
+    <task id="LOCAL-00001" summary="hmdp实现">
+      <option name="closed" value="true" />
+      <created>1758626537710</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758626537710</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -22,5 +22,16 @@
     <schema id="15" parent="1" name="7"/>
     <schema id="16" parent="1" name="8"/>
     <schema id="17" parent="1" name="9"/>
+    <hash-table id="18" parent="2" name="login:token:db88c99b2b3c485cb699ac176f36235d"/>
+    <hash-table id="19" parent="2" name="login:token:e26158d590e84f0fa3c8a735f571ff3b"/>
+    <hash-table id="20" parent="2" name="login:token:eddb94787deb4e53a335804e3ea7048d"/>
+    <set id="21" parent="2" name="follow:1"/>
+    <set id="22" parent="2" name="follow:1010"/>
+    <sorted-set id="23" parent="2" name="blog:liked:4"/>
+    <sorted-set id="24" parent="2" name="feed:1"/>
+    <sorted-set id="25" parent="2" name="feed:1010"/>
+    <sorted-set id="26" parent="2" name="shop:geo:1"/>
+    <sorted-set id="27" parent="2" name="shop:geo:2"/>
+    <string id="28" parent="2" name="cache:shopType:"/>
   </database-model>
 </dataSource>

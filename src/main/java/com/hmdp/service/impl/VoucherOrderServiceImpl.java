@@ -1,6 +1,7 @@
 package com.hmdp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.hmdp.config.RabbitMQConfig;
 import com.hmdp.dto.Result;
 
 import com.hmdp.entity.VoucherOrder;
@@ -14,6 +15,7 @@ import io.lettuce.core.RedisException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.connection.stream.*;
@@ -80,11 +82,11 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         SECKILL_SCRIPT.setResultType(Long.class);
     }
     // 定义线程池，来处理消息的
-    private static final ExecutorService SECKILL_ORDER_EXECUTOR = Executors.newSingleThreadExecutor();
+   // private static final ExecutorService SECKILL_ORDER_EXECUTOR = Executors.newSingleThreadExecutor();
 
 
     // 添加线程池销毁方法
-    @PreDestroy
+    /*@PreDestroy
     private void destroy() {
         // 尝试优雅关闭线程池
         SECKILL_ORDER_EXECUTOR.shutdown();
@@ -96,16 +98,17 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         } catch (InterruptedException e) {
             SECKILL_ORDER_EXECUTOR.shutdownNow();
         }
-    }
+    }*/
     // 还需要让线程执行任务
     // 但是我们需要这个执行的任务要在这个类初始化就马上执行，所以需要spring的注解方法首先
-    @PostConstruct
+   /* @PostConstruct
     private void init() {
         SECKILL_ORDER_EXECUTOR.submit(new VoucherOrderHandler());
     }
     // 执行线程任务
     public  class VoucherOrderHandler implements Runnable {
         String queueName = "stream.orders";
+        // 4.stream消息处理
         @Override
         public void run() {
             while (!Thread.currentThread().isInterrupted()) {
@@ -170,9 +173,9 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
                 }
             }
         }
-    }
-    // 创建订单
-    private void handleVoucherOrder(VoucherOrder voucherOrder) {
+    }*/
+    // 2.分布式锁
+   /* private void handleVoucherOrder(VoucherOrder voucherOrder) {
         // 1.获取用户
         Long userId = voucherOrder.getUserId();
         RLock lock = redissonClient.getLock("lock:order:" + userId);
@@ -190,9 +193,10 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         } finally {
             lock.unlock();
         }
-    }
-
-    // 获取代理对象
+    }*/
+    @Resource
+    private RabbitTemplate rabbitTemplate;
+    // 1.获取代理对象
     private IVoucherOrderService proxy;
     @Override
     public Result secKillVoucher(Long voucherId) {
@@ -210,12 +214,23 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         if (result != 0) {
             return Result.fail(execute == 1 ? "库存不足！":"不能重复下单！");
         }
-        // 获取代理对象
-        proxy = (IVoucherOrderService) AopContext.currentProxy();
+        /*// 获取代理对象
+        proxy = (IVoucherOrderService) AopContext.currentProxy();*/
+        // 将消息投递到RabbitMQ
+        VoucherOrder voucherOrder = new VoucherOrder();
+        voucherOrder.setUserId(userId);
+        voucherOrder.setId(orderId);
+        voucherOrder.setVoucherId(voucherId);
+        rabbitTemplate.convertAndSend(
+                RabbitMQConfig.SECKILL_EXCHANGE,
+                RabbitMQConfig.ROUTING_KEY,
+                voucherOrder
+        );
         // 返回订单id
         return Result.ok(orderId);
 
     }
+    // 3.创建订单
     @Transactional // 由于有订单库存扣减，以及创建一个新订单，所以需要一个事务
     public void creatVoucherOrder (VoucherOrder voucherOrder) {
         /*一人一单*/

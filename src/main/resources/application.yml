@@ -30,12 +30,22 @@ spring:
     username: winston
     password: 123456
     virtual-host: /
-    # 连接池配置
+    # 生产者配置
+    publisher-confirm-type: correlated  # 确认消息发送到交换机
+    publisher-returns: true  # 开启返回模式
+    template:
+      mandatory: true  # 消息路由失败返回给生产者
+    # 消费者配置
     listener:
       simple:
-        prefetch: 1
-        concurrency: 1
-        max-concurrency: 5
+        prefetch: 1  # 每次处理1条消息
+        concurrency: 1  # 最小并发数
+        max-concurrency: 5  # 最大并发数
+        acknowledge-mode: manual  # 手动确认消息
+        retry:
+          enabled: true  # 开启重试
+          max-attempts: 3  # 最大重试次数
+          initial-interval: 1000ms  # 重试间隔
 
 # Jackson配置
 jackson:

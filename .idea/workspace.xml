@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ff55b60-2bef-49fb-866e-294a610fcef2" name="Changes" comment="hmdp实现">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mq/SeckillConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/193b3db4-a8fc-449e-996a-ba0260c71cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/193b3db4-a8fc-449e-996a-ba0260c71cb4.xml" afterDir="false" />
+    <list default="true" id="9ff55b60-2bef-49fb-866e-294a610fcef2" name="Changes" comment="Rabbitmq实现秒杀功能">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f6afdb6-47cd-4992-bcc2-0999cbbced7e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmdp/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmdp/mq/SeckillConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/mq/SeckillConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IVoucherOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/IVoucherOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/seckill.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/seckill.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl$VoucherOrderHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl$VoucherOrderHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmdp/service/impl/VoucherOrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +223,7 @@
       <workItem from="1758673811478" duration="6000" />
       <workItem from="1758677645960" duration="617000" />
       <workItem from="1758678350209" duration="2200000" />
-      <workItem from="1758682724966" duration="2721000" />
+      <workItem from="1758682724966" duration="8734000" />
     </task>
     <task id="LOCAL-00001" summary="hmdp实现">
       <option name="closed" value="true" />
@@ -237,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758626537710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rabbitmq实现秒杀功能">
+      <option name="closed" value="true" />
+      <created>1758689675757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758689675757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +249,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hmdp实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="hmdp实现" />
+    <MESSAGE value="Rabbitmq实现秒杀功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rabbitmq实现秒杀功能" />
   </component>
 </project>

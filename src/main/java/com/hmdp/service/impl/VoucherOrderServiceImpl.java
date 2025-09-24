@@ -216,14 +216,14 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         }
         /*// 获取代理对象
         proxy = (IVoucherOrderService) AopContext.currentProxy();*/
-        // 将消息投递到RabbitMQ
+        // 将消息投递到RabbitMQ监听者消费消息
         VoucherOrder voucherOrder = new VoucherOrder();
         voucherOrder.setUserId(userId);
         voucherOrder.setId(orderId);
         voucherOrder.setVoucherId(voucherId);
         rabbitTemplate.convertAndSend(
                 RabbitMQConfig.SECKILL_EXCHANGE,
-                RabbitMQConfig.ROUTING_KEY,
+                RabbitMQConfig.SECKILL_ROUTING_KEY,
                 voucherOrder
         );
         // 返回订单id
@@ -232,7 +232,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     }
     // 3.创建订单
     @Transactional // 由于有订单库存扣减，以及创建一个新订单，所以需要一个事务
-    public void creatVoucherOrder (VoucherOrder voucherOrder) {
+    public void createVoucherOrder (VoucherOrder voucherOrder) {
         /*一人一单*/
         Long userId = voucherOrder.getUserId();
         /*查询订单*/

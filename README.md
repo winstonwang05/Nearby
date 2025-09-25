@@ -50,7 +50,7 @@
 1. 克隆项目
 
    ```
-   git clone https://github.com/winstonwang05/hmdp.git
+   git clone https://github.com/winstonwang05/Nearby.git
    ```
 
 2. 启动 RabbitMQ 和 Redis（推荐使用 Docker）
